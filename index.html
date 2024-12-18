@@ -10,37 +10,46 @@
 </head>
 <body>
     <!-- Hero Section -->
-    <header class="text-white text-center py-3">
+    <header class="bg-dark text-white text-center py-3">
         <div class="container">
-            <div class="d-flex justify-content-center align-items-center flex-row-reverse">
-                <img src="me.webp" alt="Mary's Icon" class="ms-3" style="width: auto; height: 150px; margin-top: 40px;">
-                <h1 class="display-4 mb-0">Hi, I'm Mary!</h1>
-                <script src="scripts.js"></script>
+            <div class="row align-items-center">
+                <!-- Εικόνα -->
+                <div class="col-md-3">
+                    <img src="me.webp" alt="Mary's Icon" class="img-fluid rounded-circle" style="height: 150px;">
+                </div>
+                <!-- Τίτλος -->
+                <div class="col-md-9">
+                    <h1 class="display-4 mb-0">Hi, I'm Mary!</h1>
+                    <p class="fs-5 mt-3">Welcome to my portfolio.</p>
+                </div>
             </div>
-            <p class="fs-5">Welcome to my portfolio.</p>
-            
         </div>
     </header>
 
     <!-- Main Section -->
     <main class="bg-light py-5">
         <div class="container">
-            <div class="main-image-container position-relative">
-                <img src="screen.webp" alt="Main Image" class="img-fluid">
-                <div class="button-overlay">
-                    <div id="typing-text-container" class="mb-4">
-                        <span id="typing-text" class="text-dark fs-4"></span>
+            <div class="row">
+                <!-- Εικόνα Laptop -->
+                <div class="col-md-8 mx-auto text-center position-relative">
+                    <img src="screen.webp" alt="Main Image" class="img-fluid">
+                    <!-- Typing Effect και Κείμενο -->
+                    <div class="position-absolute top-50 start-50 translate-middle text-center">
+                        <div id="typing-text-container" class="mb-3">
+                            <span id="typing-text" class="text-dark fs-4"></span>
+                        </div>
+                        <p class="fs-4 mb-4">Web Designer & Graphic Designer</p>
+                        <!-- Κουμπιά -->
+                        <div>
+                            <a href="#work" class="btn btn-outline-dark btn-bg me-2">Explore My Work</a>
+                            <a href="#code" class="btn btn-outline-dark btn-bg me-2">View My Code</a>
+                            <a href="#contact" class="btn btn-outline-dark btn-bg">Contact Me</a>
+                        </div>
                     </div>
-                    <div id="webd-grd" class="mb-4">
-                        <span><p class="fs-4">Web Designer & Graphic Designer</p></span>
-                    </div>
-                    <a href="#work" class="btn btn-outline-light btn-bg">Explore My Work</a>
-                    <a href="#code" class="btn btn-outline-light btn-bg">View My Code</a>
-                    <a href="#contact" class="btn btn-outline-light btn-bg">Contact Me</a>
                 </div>
             </div>
-            
         </div>
     </main>
+    <script src="scripts.js"></script>
 </body>
 </html>
