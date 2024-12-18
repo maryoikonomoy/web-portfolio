@@ -5,26 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mary's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Hero Section -->
-    <header class="bg-black bg-gradient text-white text-center py-5">
+    <header class="text-white text-center py-3">
         <div class="container">
-            
             <div class="d-flex justify-content-center align-items-center flex-row-reverse">
-                
-                <img src="me.png" alt="Mary's Icon" class="ms-3" style="width: auto; height: 100px; border-radius: 50%;">
-                
+                <img src="me.webp" alt="Mary's Icon" class="ms-3" style="width: auto; height: 150px; margin-top: 40px;">
                 <h1 class="display-4 mb-0">Hi, I'm Mary!</h1>
+                <script src="scripts.js"></script>
             </div>
-            <p class="lead mt-3">Welcome to my portfolio.</p>
-            <p class="fs-5">Web Designer & Graphic Designer</p>
-            <div class="mt-4">
-                <a href="#work" class="btn btn-outline-light btn-sm me-2">Explore My Work</a>
-                <a href="#code" class="btn btn-outline-light btn-sm me-2">View My Code</a>
-                <a href="#contact" class="btn btn-outline-light btn-sm">Contact Me</a>
-            </div>
+            <p class="fs-5">Welcome to my portfolio.</p>
+            
         </div>
     </header>
+
+    <!-- Main Section -->
+    <main class="bg-light py-5">
+        <div class="container">
+            <div class="main-image-container position-relative">
+                <img src="screen.webp" alt="Main Image" class="img-fluid">
+                <div class="button-overlay">
+                    <div id="typing-text-container" class="mb-4">
+                        <span id="typing-text" class="text-dark fs-4"></span>
+                    </div>
+                    <div id="webd-grd" class="mb-4">
+                        <span><p class="fs-4">Web Designer & Graphic Designer</p></span>
+                    </div>
+                    <a href="#work" class="btn btn-outline-light btn-bg">Explore My Work</a>
+                    <a href="#code" class="btn btn-outline-light btn-bg">View My Code</a>
+                    <a href="#contact" class="btn btn-outline-light btn-bg">Contact Me</a>
+                </div>
+            </div>
+            
+        </div>
+    </main>
 </body>
 </html>
