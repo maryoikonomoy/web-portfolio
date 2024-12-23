@@ -1,64 +1,92 @@
-h1 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 3rem;
-    color: #ffffff;
-    letter-spacing: 2px; 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 header{
     background-color: #0c030b;
 }
 
-.main-image-container {
-    position: relative;
-    height: 400px;
-    
-    background-color: #f8f9fa;
+body {
+    font-family: 'Raleway', sans-serif;
 }
 
-.main-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; 
-    display: block;
+.top-77 {
+
+    top: 73%;
 }
 
-.button-overlay {
-    position: absolute;
-    bottom: 70px; 
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+.top-30{
+    top: 30%;
+} 
+
+.typing-text {
+
+    font-style: italic;
+    font-size: 1.3rem;
+    word-spacing: 20%;
 }
 
+.btn-md {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    white-space: nowrap; 
+}
 
-.button-overlay .btn {
-    margin: 10px;
-    color: #ffffff;
+.text-responsive p {
+    font-size: 1.5rem; 
+    margin-top: 35px;
+}
+
+.btn{
+
+    color: white;
     background-color: #000000;
-    transition: all 0.3s ease;
-}
-
-.button-overlay .btn:hover {
-    background-color: #ff98e9;
-    color: #000;
-}
-
-#typing-text-container {
-    position: relative;
-    bottom: 50px;
-    text-align: center;
+    background-size: 200% 100%; 
+    transition: all 0.4s ease-in-out; 
+    background-position: 0 0; 
+    background-image: none; 
     
 }
-
-#typing-text {
-    font-size: 1.5rem;
-    font-weight: 100;
-    color: #000;
-    
+.btn:hover {
+    background-image: linear-gradient(to right,#000000, #b63d85, #a83279, #0c030b, #000000); 
+    background-position: 100% 0; 
+    transform: scale(1.1); 
+    background-position: 100% 0; 
+    transition: all 0.4s ease-in-out; 
 }
-#webd-grd {
-    position: relative;
-    bottom: 170px;
+
+
+@media (max-width: 768px) {
+    .btn-sm-on-small {
+        font-size: 0.85rem; 
+        padding: 0.4rem 0.8rem; 
+    }
+
+    .buttons-container {
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .buttons-container .col-auto {
+        margin-bottom: 0.5rem;
+        margin-top: 50px; 
+    }
+
+    .text-responsive p {
+        font-size: 0.8rem; 
+        margin-top: 0px;
+    }
+
+    .typing-text{
+        font-size: 0.7rem;
+    }
+
+   
+}
+
+.icon-img {
+
+    padding-right: 20px;
 }
