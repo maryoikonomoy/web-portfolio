@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-header{
-    background-color: #0c030b;
-}
+
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -94,6 +92,13 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
+.icon-img-train, .icon-img-plane {
+    height: auto;
+    width: 50%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
 
 .custom-card {
 border: 5px solid #005288; 
@@ -111,7 +116,61 @@ transform: scale(1.05);
 .card-title {
 font-size: 1.5rem;
 color: #005288;
-margin-top: 10px;
 font-family: 'Lora', serif;
 font-style: italic;
 }
+
+.navbar {
+    background-color: #f8f9fa; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Lora', serif; 
+    font-size: 1.2rem; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+    color: #005288; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #005288;
+    transform: scale(1.1); 
+    font-weight: bold;
+}
+
+.map-icon {
+    max-width: 47%; 
+    height: auto;
+    
+}
+
+.map-icon:hover {
+    transform: scale(1.1); 
+    transition:  0.3s ease-in-out, transform 0.3s ease-in-out;
+    
+}
+
+#GoogleMapsIcons .row {
+    row-gap: 2rem;
+}
+
+.btn-back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #005288;
+    border: 2px solid #005288;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.btn-back-home:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+  
