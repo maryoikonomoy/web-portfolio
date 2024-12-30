@@ -57,19 +57,21 @@ body {
 
 
 @media (max-width: 768px) {
+    .buttons-container {
+        position: absolute;
+        top: 107%; 
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+
+
     .btn-sm-on-small {
         font-size: 0.85rem; 
         padding: 0.4rem 0.8rem; 
     }
 
-    .buttons-container {
-        flex-wrap: wrap; 
-        justify-content: center; 
-    }
-
     .buttons-container .col-auto {
-        margin-bottom: 0.5rem;
-        margin-top: 50px; 
+        margin-bottom: 0.5rem; 
     }
 
     .text-responsive p {
