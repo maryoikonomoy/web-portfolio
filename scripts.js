@@ -6,7 +6,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let particles = [];
-const colors = ["rgba(0, 255, 204, 0.2)", "rgba(255, 0, 204, 0.2)", "rgba(0, 153, 255, 0.2)"];
+const colors = ["rgba(21, 255, 208, 0.2)", "rgba(248, 12, 201, 0.2)", "rgba(0, 153, 255, 0.2)"];
 
 class Particle {
     constructor() {
