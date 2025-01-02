@@ -159,7 +159,7 @@ canvas {
         display: flex;
         justify-content: center;
         gap: 15px; 
-        margin-top: -120px; 
+        margin-top: -180px; 
     }
 
     .btn-mobile {
@@ -177,9 +177,6 @@ canvas {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .btn-mobile:hover {
-        transform: scale(1.1); 
-        box-shadow: 0 10px 25px rgba(255, 117, 140, 0.5);
-    }
+   
 }
 
