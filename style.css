@@ -57,13 +57,14 @@ canvas {
 
 .profile-img {
     width: auto;
-    height: 300px;
+    height: 380px;
     border-radius: 20%;
     margin-top: 20px;
     opacity: 0;
-    
     animation: fadeInScale 0.5s ease-out 2.5s forwards;
+    
 }
+
 
 
 @keyframes fadeInScale {
@@ -81,7 +82,7 @@ canvas {
 .left-column {
     position: fixed;
     top: 50%;
-    left: 20px;
+    left: 25px;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
@@ -262,6 +263,7 @@ canvas {
     font-weight: 300;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     line-height: 1.6;
+    
 }
 
 body {
@@ -281,6 +283,9 @@ main {
     .typing-container {
         display: none;
     }
+    .profile-img {
+        height: 280px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -290,11 +295,14 @@ main {
     .typing-container {
         display: none;
     }
+    .profile-img {
+        height: 250px;
+    }
 }
 
 .typing-container {
     text-align: center;
-    margin: 70px; 
+    margin-top: 20px; 
     position: relative;
     z-index: -2; 
 }
@@ -307,10 +315,8 @@ main {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
     display: inline-block;
     white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid white; 
-    width: 0; 
-    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+    overflow: hidden; 
+    animation: typing 7s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
