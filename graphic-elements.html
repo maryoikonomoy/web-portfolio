@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greece is icons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+
+    
+    <style>
+   h2 {
+    
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #005288; 
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: #2a4c7b;  
+    margin: 10px auto 0 auto; 
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-nav .nav-link {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1px;
+    
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: rgba(42, 76, 123, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    overflow-x: hidden; 
+}
+
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap; 
+}
+
+
+.navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; 
+    margin: 0 8px; 
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    white-space: nowrap; 
+}
+
+.navbar-nav .nav-link:hover {
+    text-shadow: 0px 0px 5px #005288;
+}
+
+
+.dropdown {
+    display: none;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1050;
+}
+
+.dropdown-btn {
+    color: white;
+    font-size: 1.2rem;
+    background: rgba(42, 76, 123, 0.90);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+}
+
+
+
+.dropdown-menu {
+    width: 40%!important;
+    background: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    z-index: 1050;
+    text-align: left;
+    
+}
+
+.dropdown-item {
+    color: white;
+    font-size: 0.9rem;
+    padding: 8px 10px;
+    margin-bottom: 2px; 
+    background: rgba(42, 76, 123, 0.90);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: left; 
+    transition: background 0.3s ease; 
+    
+}
+
+
+.dropdown-btn:focus,
+.dropdown-btn:active {
+    background: rgba(42, 76, 123, 0.90);
+    outline: none; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1); 
+}
+
+
+@media (max-width: 768px) {
+    .dropdown {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+
+.icon-img {
+    height: auto;
+    width: 80%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+
+.icon-img:hover {
+
+    transform: scale(1.1); 
+    transition:  0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.icon-img-lyre {
+    height: auto;
+    width: 103%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+
+.icon-img-lyre:hover {
+    transform: scale(1.1); 
+    transition:  0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+.icon-img-train, .icon-img-plane {
+    height: auto;
+    width: 50%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-img-train:hover, .icon-img-plane:hover {
+    transform: scale(1.1); 
+    transition:  0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+
+.custom-card-map {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #2a4c7b;
+    border-radius: 50%; 
+    margin: 10px auto; 
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.custom-card-map:hover {
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+transform: scale(1.05); 
+}
+
+.custom-card {
+width: 85%;
+height: auto;
+border: 5px solid #8bbae5; 
+border-radius: 10px;
+margin: 0 auto;
+transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+.custom-card:hover {
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+transform: scale(1.05); 
+}
+
+
+.card-title {
+font-size: 1.5rem;
+color: #005288;
+font-family: 'Lora', serif;
+font-style: italic;
+}
+
+.map-icon {
+    height: auto;
+    width: 45%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.map-icon:hover {
+    transform: scale(1.1); 
+    transition:  0.3s ease-in-out, transform 0.3s ease-in-out;
+    
+}
+
+
+.intro {
+    font-family:  font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2a4c7b;  
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+   
+}
+
+@media (max-width: 768px) {
+    .icon-img {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    .icon-img-lyre {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .icon-img-train, .icon-img-plane {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+    .custom-card-map {
+        width: 150px;
+        height: 150px;
+        border-width: 4px;
+    }
+
+    .custom-card {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    
+
+    .intro {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+    
+   
+
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.row {
+    justify-content: center; 
+    text-align: center; 
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="top" > </div>
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
+        <div class="container justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="#Tourism-Essentials">Tourism Essentials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="#Culture">Culture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="#Places">Places</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="#Sports">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="#Transportation">Transportation</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="#GoogleMapsIcons">G-Maps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="#top">
+                       
+                        <i class="bi bi-arrow-up"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="index.html">Back</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="dropdown d-md-none sticky-top">
+        <button class="dropdown-btn btn btn-primary w-100 text-start" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-list"></i> Menu
+        </button>
+        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenu">
+            <li><a class="dropdown-item" href="#Tourism-Essentials">Tourism Essentials</a></li>
+            <li><a class="dropdown-item" href="#Culture">Culture</a></li>
+            <li><a class="dropdown-item" href="#Places">Places</a></li>
+            <li><a class="dropdown-item" href="#Sports">Activities</a></li>
+            <li><a class="dropdown-item" href="#Transportation">Transportation</a></li>
+            <li><a class="dropdown-item" href="#GoogleMapsIcons">G-Maps</a></li>
+            <li><a class="dropdown-item" href="#top"><i class="bi bi-arrow-up"></i> Back to Top</a></li>
+            <li><a class="dropdown-item" href="index.html">Back</a></li>
+        </ul>
+    </div>
+
+     
+    <div class="container my-5" id="Tourism-Essentials">
+        <h2 class="text-center mb-4">Tourism Essentials</h2>
+        <p class="text-center mb-5 intro">
+            These icons were designed to highlight the diverse reasons to explore Greece.
+        </p>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/alternative_tourism/family-hol_thumb.webp" alt="Tourism Icon 1" class="icon-img mb-3">
+                        <h5 class="card-title">Family holiday</h5>
+                        <p>This icon symbolizes a family holiday, focusing on travel, shared adventures, and the joy of exploring new destinations together.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/alternative_tourism/grape_cyan_thumb.webp" alt="Tourism Icon 2" class="icon-img mb-3">
+                        <h5 class="card-title">Wine Tourism</h5>
+                        <p>Wine tourism celebrates the exploration of vineyards, fine wines, and the timeless art of winemaking.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/alternative_tourism/AGRO2_thumb.webp" alt="Tourism Icon 3" class="icon-img mb-3">
+                        <h5 class="card-title">Agrotourism</h5>
+                        <p>Agrotourism highlights the charm of rural life, traditional farming, and the natural beauty of the countryside.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/alternative_tourism/ALTERN_thumb.webp" alt="Tourism Icon 4" class="icon-img mb-3">
+                        <h5 class="card-title">Alternative Tourism</h5>
+                        <p>Alternative tourism focuses on unique travel experiences, promoting sustainability and exploring off-the-beaten paths.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/alternative_tourism/business_tourism_thumb.webp" alt="Tourism Icon 5" class="icon-img mb-3">
+                        <h5 class="card-title">Business Tourism</h5>
+                        <p>Business travel captures professional journeys for meetings, conferences, and networking, combining efficiency with seamless mobility.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/alternative_tourism/gastronomia_thumb.webp" alt="Tourism Icon 6" class="icon-img mb-3">
+                        <h5 class="card-title">Gastronomy Tourism</h5>
+                        <p>Gastronomy tourism highlights the essence of Greek cuisine, from olive oil and fresh produce to timeless culinary traditions.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/alternative_tourism/eco_tourism_thumb.webp" alt="Tourism Icon 7" class="icon-img mb-3">
+                        <h5 class="card-title">Eco Tourism</h5>
+                        <p>Eco-tourism promotes sustainable travel, nature connection, and environmental conservation.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/alternative_tourism/religious_tourism_thumb.webp" alt="Tourism Icon 8" class="icon-img mb-3">
+                        <h5 class="card-title">Religious Tourism</h5>
+                        <p>Religious tourism reflects journeys of faith and visits to culturally significant sacred sites.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/alternative_tourism/ISLAND_HOPPING_thumb.webp" alt="Tourism Icon 9" class="icon-img mb-3">
+                        <h5 class="card-title">Island Hopping</h5>
+                        <p>Island hopping captures the essence of exploring Greek islands, connecting their unique beauty and stunning landscapes.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 10 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/alternative_tourism/accesible_tourism_thumb.webp" alt="Tourism Icon 10" class="icon-img mb-3">
+                        <h5 class="card-title">Accessible Tourism</h5>
+                        <p>Accessible tourism ensures inclusive travel experiences for people of all abilities.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 11 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/alternative_tourism/WEDDING_thumb.webp" alt="Tourism Icon 11" class="icon-img mb-3">
+                        <h5 class="card-title">Honeymoon</h5>
+                        <p>Honeymoon tourism captures romantic getaways and unforgettable moments in stunning destinations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container my-5" id="Culture">
+        <h2 class="text-center mb-4">It's all about history</h2>
+        <p class="text-center mb-5 intro">
+            These icons reflect Greece's cultural essence, highlighting its traditions, museums, mythology, and rich historical heritage.
+        </p>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/culture/art_final_blue_thumb.webp" alt="Tourism Icon 12" class="icon-img mb-3">
+                        <h5 class="card-title">History</h5>
+                        <p>Greece's rich history reflects its timeless legacy and contributions to world civilization.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/culture/arxaio_blue_thumb.webp" alt="Tourism Icon 13" class="icon-img mb-3">
+                        
+                        <h5 class="card-title">Museum</h5>
+                        
+                        <p>Inspired by a column, this icon represents Greek museums, showcasing ancient heritage and cultural treasures.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/culture/LYRA_thumb.webp" alt="Tourism Icon 14" class="icon-img-lyre mb-3">
+                        <h5 class="card-title">Tradition</h5>
+                        <p>A lyre-shaped icon representing Greek traditions, music, and cultural heritage.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/culture/medussa_thumb.webp" alt="Tourism Icon 15" class="icon-img mb-3">
+                        <h5 class="card-title">Mythology</h5>
+                        <p>Inspired by Medusa, this icon represents Greek mythology and its legendary tales.</p>
+                    </div>
+                </div>
+            </div>
+          
+          
+          
+        </div>
+    </div>
+    
+    <div class="container my-5" id="Places">
+        <h2 class="text-center mb-4">Places to go</h2>
+        <p class="text-center mb-5 intro">
+            Greece offers a variety of stunning places to explore, from lush natural landscapes and towering mountains to serene campsites under the stars. 
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/places/city_breaks_thumb.webp" alt="Tourism Icon 16" class="icon-img mb-3">
+                        <h5 class="card-title">City breaks</h5>
+                        <p>This icon represents city breaks, highlighting short getaways filled with culture and urban exploration.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/places/MOUNT_CAMPING_thumb.webp" alt="Tourism Icon 17" class="icon-img mb-3">
+                        
+                        <h5 class="card-title">Mountain camping</h5>
+                        
+                        <p>Mountain camping highlights adventure, connection with nature, and the serenity of the outdoors.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/places/mountain1_thumb.webp" alt="Tourism Icon 18" class="icon-img mb-3">
+                        <h5 class="card-title">Mountain</h5>
+                        <p>Mountains symbolize majestic peaks, natural beauty, and inspiring adventure.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/places/nature_thumb.webp" alt="Tourism Icon 19" class="icon-img mb-3">
+                        <h5 class="card-title">Nature</h5>
+                        <p>Nature is depicted through simplicity, highlighting the serene beauty of natural landscapes.</p>
+                    </div>
+                </div>
+            </div>
+           <!-- Card 5 -->
+           <div class="col-md-3 col-sm-6">
+            <div class="card text-center custom-card">
+                <div class="card-body">
+                    <img src="assets/places/paralia_thumb.webp" alt="Tourism Icon 20" class="icon-img mb-3">
+                    <h5 class="card-title">Beach</h5>
+                    <p>Featuring palm trees, sun, and sea, this icon represents the beach and serene coastal escapes.</p>
+                </div>
+            </div>
+        </div>
+          
+          
+        </div>
+    </div>
+    <div class="container my-5" id="Sports">
+        <h2 class="text-center mb-4">Sports and activities</h2>
+        <p class="text-center mb-5 intro">
+        This set of icons represents sports and activities, capturing the excitement of adventure, fitness, and recreation.
+        </p>
+        <div class="row g-4">
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/sports_section/caving_thumb.webp" alt="Tourism Icon 22" class="icon-img mb-3">
+                        <h5 class="card-title">Caving</h5>
+                        <p>Caving highlights the thrill of exploring underground wonders and natural formations.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/sports_section/climbing_thumb.webp" alt="Tourism Icon 23" class="icon-img mb-3">
+                        <h5 class="card-title">Climbing</h5>
+                        <p>Climbing captures the excitement of scaling heights and conquering peaks.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/sports_section/cycling_thumb.webp" alt="Tourism Icon 24" class="icon-img mb-3">
+                        <h5 class="card-title">Cycling</h5>
+                        <p>Cycling highlights the joy of scenic routes and the freedom of outdoor adventures.</p>
+                    </div>
+                </div>
+            </div>
+         
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/sports_section/HIKING_thumb.webp" alt="Tourism Icon 25" class="icon-img mb-3">
+                        <h5 class="card-title">Hiking</h5>
+                        <p>Hiking embodies the exploration of trails, immersion in nature, and discovery of stunning landscapes.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/sports_section/JETSKI2_thumb.webp" alt="Tourism Icon 26" class="icon-img mb-3">
+                        <h5 class="card-title">Jet Ski</h5>
+                        <p>Jet skiing captures the thrill of speed, water gliding, and seaside adventures.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/sports_section/kayak_thumb.webp" alt="Tourism Icon 27" class="icon-img mb-3">
+                        <h5 class="card-title">Kayak</h5>
+                        <p> Kayaking combines tranquility and excitement, exploring serene waters and hidden coastal gems.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/sports_section/kite_thumb.webp" alt="Tourism Icon 28" class="icon-img mb-3">
+                        <h5 class="card-title">Kite</h5>
+                        <p>Kite surfing highlights the thrill of wind-powered rides and dynamic seaside adventures.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/sports_section/MOTOCROSS2_thumb.webp" alt="Tourism Icon 29" class="icon-img mb-3">
+                        <h5 class="card-title">Motocross</h5>
+                        <p>Motocross captures the adrenaline of off-road racing and conquering tough terrains.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/sports_section/PARAGL_thumb.webp" alt="Tourism Icon 30" class="icon-img mb-3">
+                        <h5 class="card-title">Paragliding</h5>
+                        <p>Paragliding captures the thrill of soaring and breathtaking aerial views.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/sports_section/RAFTING_thumb.webp" alt="Tourism Icon 31" class="icon-img mb-3">
+                        <h5 class="card-title">Rafting</h5>
+                        <p>Rafting embodies the thrill of rushing rivers and the spirit of teamwork in adventure.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/sports_section/SCUBA_thumb.webp" alt="Tourism Icon 32" class="icon-img mb-3">
+                        <h5 class="card-title">Scuba Diving</h5>
+                        <p>Scuba diving explores ocean depths and vibrant underwater ecosystems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5" id="Transportation">
+        <h2 class="text-center mb-4">Transportation</h2>
+        <p class="text-center mb-5 intro">
+            This section showcases transportation icons, designed to guide travelers on how to navigate and reach their destinations effortlessly.
+        </p>
+        <div class="row g-4">
+           
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/transportation/car_thumb.webp" alt="Tourism Icon 33" class="icon-img mb-3">
+                        <h5 class="card-title">Travel by car</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/transportation/minivan_thumb.webp" alt="Tourism Icon 34" class="icon-img mb-3">
+                        <h5 class="card-title">Group Tours</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/transportation/plane_fin3.webp" alt="Tourism Icon 35" class="icon-img-plane mb-3">
+                        <h5 class="card-title">Travel by plane</h5>
+                        
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/transportation/SHIP_FINAL_thumb.webp" alt="Tourism Icon 36" class="icon-img mb-3">
+                        <h5 class="card-title">Travel by ship</h5>
+                        
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/transportation/train.webp" alt="Tourism Icon 37" class="icon-img-train mb-3">
+                        <h5 class="card-title">Travel by train</h5>
+                        
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card">
+                    <div class="card-body">
+                        <img src="assets/transportation/guide_thumb.webp" alt="Tourism Icon 6" class="icon-img mb-3">
+                        <h5 class="card-title">Travel guide</h5>
+                        
+                    </div>
+                </div>
+            </div>
+           
+    </div>
+
+
+    <div class="container my-5" id="GoogleMapsIcons">
+        <h2 class="text-center mb-4">Google Maps Icons</h2>
+        <p class="text-center mb-5">
+            These icons were designed for overriding default Google Maps markers. They were adapted to match the logic and color scheme of this project.
+        </p>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card-map">
+                    <div class="card-body">
+                        <img src="assets/maps/villas-placemark-no-boarder.webp" alt="Villa" class="map-icon mb-3">
+                        <h5 class="card-title">Villa</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card-map">
+                    <div class="card-body">
+                        <img src="assets/maps/bed-and-breakfast-no-border.webp" alt="Bed and Breakfast" class="map-icon mb-3">
+                        <h5 class="card-title">Bed and Breakfast</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card-map">
+                    <div class="card-body">
+                        <img src="assets/maps/brunch-placemark-no-border.webp" alt="Brunch" class="map-icon mb-3">
+                        <h5 class="card-title">Brunch</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card-map">
+                    <div class="card-body">
+                        <img src="assets/maps/cafe-placemark-no-border.webp" alt="Cafe" class="map-icon mb-3">
+                        <h5 class="card-title">Cafe</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card-map">
+                    <div class="card-body">
+                        <img src="assets/maps/camping-placemark-no-boarder.webp" alt="Camping" class="map-icon mb-3">
+                        <h5 class="card-title">Camping</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card-map">
+                    <div class="card-body">
+                        <img src="assets/maps/cottage-placemark-no-border.webp" alt="Cottage" class="map-icon mb-3">
+                        <h5 class="card-title">Cottage</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card-map">
+                    <div class="card-body">
+                        <img src="assets/maps/fusi-placemark-no-border.webp" alt="Nature" class="map-icon mb-3">
+                        <h5 class="card-title">Nature</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card-map">
+                    <div class="card-body">
+                        <img src="assets/maps/hotel-placemark-no-border.webp" alt="Hotel" class="map-icon mb-3">
+                        <h5 class="card-title">Hotel</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card-map">
+                    <div class="card-body">
+                        <img src="assets/maps/ship.webp" alt="Ship" class="map-icon mb-3">
+                        <h5 class="card-title">Ship</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 10 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card-map">
+                    <div class="card-body">
+                        <img src="assets/maps/limani-placemark-no-border.webp" alt="Port" class="map-icon mb-3">
+                        <h5 class="card-title">Port</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 11 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card-map">
+                    <div class="card-body">
+                        <img src="assets/maps/museum-placemark-no-border.webp" alt="Museum" class="map-icon mb-3">
+                        <h5 class="card-title">Museum</h5>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Card 13 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center custom-card-map">
+                    <div class="card-body">
+                        <img src="assets/maps/icon_gia_googlemaps_fin.png" alt="Google Maps Button" class="map-icon mb-3">
+                        <h5 class="card-title">Google Maps Button</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <!-- Bootstrap Bundle με Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
